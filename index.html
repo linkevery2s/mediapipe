@@ -9,7 +9,8 @@
   <meta property="og:title" content="MediaPipe Hand" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="./ogp.png" />
-  <meta name="description" content="GoogleのAIライブラリ「MediaPipe」を使ってみました。Handでは、カメラから手を認識してくれます。カメラを通して手を認識すると、関節の骨組みが表示されます。スポーツ・医療現場での利用を考えていきます。" />
+  <meta name="description"
+    content="GoogleのAIライブラリ「MediaPipe」を使ってみました。Handでは、カメラから手を認識してくれます。カメラを通して手を認識すると、関節の骨組みが表示されます。スポーツ・医療現場での利用を考えていきます。" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="MediaPipe Hand" />
   <meta name="twitter:image" content="./ogp.png" />
@@ -83,7 +84,7 @@
     #abstract {
       text-align: left;
       background-color: rgba(255, 255, 255, 0.7);
-      padding: 3rem;
+      padding: 2rem;
       margin: 1rem;
       max-width: 700px;
       border-radius: 1em;
@@ -110,6 +111,21 @@
 
     h1 {
       color: #ffffff;
+    }
+
+    #footer {
+      margin: 15px 0 0 0;
+      padding: 2px 0 2px 0;
+      text-align: center;
+      background: #000000;
+      color: #ffffff;
+      bottom: 0;
+    }
+
+    #footer a {
+      text-decoration: none;
+      color: #ffffff;
+      border-bottom: 1px dotted #ffffff;
     }
   </style>
 </head>
@@ -138,9 +154,15 @@
 
       <div id="abstract">
         GoogleのAIライブラリ「MediaPipe」を使ってみました。Handでは、カメラから手を認識してくれます。カメラを通して手を認識すると、関節の骨組みが表示されます。スポーツ・医療現場での利用を考えていきます。
+
+        <div id="footer">
+          &copy; 2023 仁志、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a>
+        </div>
       </div>
 
     </div>
+
+
 
     <script type="module">
       import { HandLandmarker, FilesetResolver } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0";
